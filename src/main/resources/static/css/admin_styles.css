@@ -1,0 +1,15 @@
+@import "fonts.css";
+@import "auth.css";
+@import "order_list.css";
+@import "ingredient_list.css";
+@import "add_ingredient.css";
+
+body{
+    background: #ffffff;
+}
+
+.container{
+    max-width: 1140px;
+    padding: 0px 100px;
+    margin: 0 auto;
+}

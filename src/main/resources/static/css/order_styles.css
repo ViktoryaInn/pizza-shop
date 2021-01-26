@@ -1,0 +1,12 @@
+@import "fonts.css";
+@import "order.css";
+
+body{
+    background: #ffffff;
+}
+
+.container{
+    max-width: 1140px;
+    padding: 0px 100px;
+    margin: 0 auto;
+}

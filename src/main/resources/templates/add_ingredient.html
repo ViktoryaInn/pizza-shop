@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="all"
+          href="../static/css/admin_styles.css" th:href="@{/css/auth_styles.css}">
+    <title>PIZZA-SHOP</title>
+</head>
+<body>
+    <header class="headerArea">
+        <div class="container">
+            <div class="header-wrap">
+                <h2 class="header-title">Админка PIZZA-SHOP</h2>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <nav class="nav-bar">
+                <a href="" class="nav-link">Заказы</a>
+                <a href="" class="nav-link">Ингредиенты</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="add-ingredient">
+            <form class="add__form" action="">
+                <div class="add__form-info">
+                    <label class="add__form-label" for="addName">Ингредиент</label>
+                    <input class="add__form-input" type="text" th:field="*{addName}" id="addName">
+                </div>
+                <div class="add__form-info">
+                    <label class="add__form-label" for="addPrice">Стоимость</label>
+                    <input class="add__form-input" type="text" th:field="*{addPrice}" id="addPrice">
+                </div>
+                <br/>
+                <input class="add__form-submit" type="submit" value="Добавить">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

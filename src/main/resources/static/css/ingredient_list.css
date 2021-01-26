@@ -1,0 +1,86 @@
+.ingredients{
+    padding: 40px 0;
+    color: #0c0907;
+    font-family: 'ProximaNovaRegular';
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ingredients-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ingredient-card{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 12px;
+    border: 1px solid #180502;
+    border-radius: 4px;
+}
+
+.add-ingredient-btn{
+    margin: 10px;
+    width: 40.5px;
+    height: 40.5px;
+    float: right;
+    background-color: transparent;
+    background: center/contain no-repeat url("../img/add.png");
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.ingredient-buttons{
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingredient-edit{
+    width: 20.5px;
+    height: 20.5px;
+    background-color: transparent;
+    background: center/contain no-repeat url("../img/edit.png");
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.ingredient-delete{
+    width: 20.5px;
+    height: 20.5px;
+    background-color: transparent;
+    background: center/contain no-repeat url("../img/close.svg");
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.ingredient-cost{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'ProximaNovaRegular';
+    font-size: 16px;
+}
+
+.ingredient-name{
+    margin-bottom: 10px;
+}
+
+.ingredient-price-label{
+    color: #584f48;
+}
+
+.ingredient-price{}

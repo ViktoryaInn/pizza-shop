@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PIZZA-SHOP</title>
+    <link rel="stylesheet" type="text/css" media="all"
+          href="../static/css/order_styles.css" th:href="@{/css/order_styles.css}">
+</head>
+<body>
+    <header class="headerArea">
+        <div class="container">
+            <div class="header-wrap">
+                <h2 class="header-title">Добро пожаловать в PIZZA-SHOP</h2>
+                <p class="header-text">Доставка пиццы в любое время при заказе от 475 рублей!</p>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="ingredientsArea">
+            <div class="ingredientsArea-wrap">
+                <div class="ingredient">
+                    <label class="ingredient-name">Томаты</label>
+                    <input type="checkbox" class="ingredient-checkbox">
+                </div>
+                <div class="ingredient">
+                    <label class="ingredient-name">Болгарский перец</label>
+                    <input type="checkbox" class="ingredient-checkbox">
+                </div>
+                <div class="ingredient">
+                    <label class="ingredient-name">Грибы</label>
+                    <input type="checkbox" class="ingredient-checkbox">
+                </div>
+                <div class="ingredient">
+                    <label class="ingredient-name">Лук</label>
+                    <input type="checkbox" class="ingredient-checkbox">
+                </div>
+                <div class="ingredient">
+                    <label class="ingredient-name">Чеснок</label>
+                    <input type="checkbox" class="ingredient-checkbox">
+                </div>
+                <div class="ingredient">
+                    <label class="ingredient-name">Соленый огурец</label>
+                    <input type="checkbox" class="ingredient-checkbox">
+                </div>
+                <div class="ingredient">
+                    <label class="ingredient-name">Маслины</label>
+                    <input type="checkbox" class="ingredient-checkbox">
+                </div>
+                <div class="ingredient">
+                    <label class="ingredient-name">Оливки</label>
+                    <input type="checkbox" class="ingredient-checkbox">
+                </div>
+                <div class="ingredient">
+                    <label class="ingredient-name">Цыпленок</label>
+                    <input type="checkbox" class="ingredient-checkbox">
+                </div>
+                <div class="ingredient">
+                    <label class="ingredient-name">Бекон</label>
+                    <input type="checkbox" class="ingredient-checkbox">
+                </div>
+                <div class="ingredient">
+                    <label class="ingredient-name">Пепперони</label>
+                    <input type="checkbox" class="ingredient-checkbox">
+                </div>
+                <div class="ingredient">
+                    <label class="ingredient-name">Чоризо</label>
+                    <input type="checkbox" class="ingredient-checkbox">
+                </div>
+                <div class="ingredient">
+                    <label class="ingredient-name">Ветчина</label>
+                    <input type="checkbox" class="ingredient-checkbox">
+                </div>
+            </div>
+        </div>
+        <div class="orderForm">
+            <form th:method="POST" th:action="@{/}" th:object="${order}">
+                <span class="orderForm-title">Итоговая стоимость:</span>
+                <span class="order-totalPrice"></span>
+                <br/>
+                <div class="orderForm-info">
+                    <label class="orderForm-label" for="clientName">Имя</label>
+                    <input class="orderForm-input" type="text" th:field="*{clientName}" id="clientName"/>
+                </div>
+                <div class="orderForm-info">
+                    <label class="orderForm-label" for="clientPhone">Телефон</label>
+                    <input class="orderForm-input" type="text" th:field="*{clientPhone}" id="clientPhone"/>
+                </div>
+                <br/>
+                <input class="orderForm-submit" type="submit" value="Отправить заказ"/>
+            </form>
+        </div>
+    </div>
+    <div class="modal__window">
+        <div class="modal-wrap">
+            <button class="modal-close"></button>
+            <div class="modal-container">
+                <h3 class="modal-title">Ваш заказ отправлен!</h3>
+                <p class="modal-text">Ожидайте, ваша вкусная и горячая пицца прибудет втечение часа!</p>
+                <img src="../static/img/pizza.png" alt="pizza" class="modal-img">
+            </div>
+        </div>
+    </div>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>

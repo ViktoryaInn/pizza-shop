@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PIZZA-SHOP</title>
+    <link rel="stylesheet" type="text/css" media="all"
+          href="../static/css/admin_styles.css" th:href="@{/css/auth_styles.css}">
+</head>
+<body>
+    <header class="headerArea">
+        <div class="container">
+            <div class="header-wrap">
+                <h2 class="header-title">Вход для администраторов PIZZA-SHOP</h2>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="authentication">
+            <form class="auth__form" action="">
+                <div class="auth__form-info">
+                    <label class="auth__form-label" for="adminName">Логин</label>
+                    <input class="auth__form-input" type="text" th:field="*{adminName}" id="adminName">
+                </div>
+                <div class="auth__form-info">
+                    <label class="auth__form-label" for="adminPassword">Пароль</label>
+                    <input class="auth__form-input" type="password" th:field="*{adminPassword}" id="adminPassword">
+                </div>
+                <br/>
+                <input class="auth__form-submit" type="submit" value="Войти">
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

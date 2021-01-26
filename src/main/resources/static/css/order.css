@@ -1,0 +1,196 @@
+.headerArea{
+    margin: -53px -8px 0;
+    height: 500px;
+    background: center/ contain url(../img/header.jpg);
+    background-size: 100% auto;
+}
+
+.header-wrap{
+    padding-left: 100px;
+}
+
+.header-title{
+    margin-bottom: 0;
+    padding: 125px 0 16px;
+    width: 600px;
+    color: white;
+    font-family: 'ProximaNovaExtrabld';
+    font-size: 64px;
+}
+
+.header-text{
+    margin: 0;
+    color: white;
+    font-family: 'ProximaNovaLight';
+    font-size: 16px;
+}
+
+.ingredientsArea{
+    padding: 40px 0;
+    color: #0c0907;
+    font-family: 'ProximaNovaSemibold';
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ingredientsArea-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ingredient{
+    height: 50px;
+    width: 240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 0 10px;
+    border: 1px solid #180502;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.ingredient:hover{
+    box-shadow: 0 0 1px 4px #e63e00ab;
+}
+
+.ingredient-checkbox{
+}
+
+.orderForm{
+    margin-bottom: -10px;
+    height: 275px;
+    background: center/contain no-repeat url("../img/send_form.jpg");
+    background-size: 100% auto;
+    color: white;
+    font-family: 'ProximaNovaRegular';
+    font-size: 18px;
+}
+
+.orderForm form{
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 45px;
+    text-align: center;
+}
+
+.orderForm-title{
+    font-family: 'ProximaNovaBold';
+    font-size: 32px;
+}
+
+.orderForm-label{
+    margin: 10px;
+}
+
+.orderForm-input{
+    width: 255px;
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-family: 'ProximaNovaLight';
+    font-size: 16px;
+}
+
+.orderForm-info{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.orderForm-submit{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    font-family: 'ProximaNovaRegular';
+    font-size: 24px;
+    background-color: #ee4a0d;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.orderForm-submit:hover{
+    background-color: #cf450c;
+}
+
+.orderForm-submit:active{
+    box-shadow: inset 0 0 21px #a4380b;
+}
+
+.modal__window{
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 2;
+    display: none;
+}
+
+.modal__window--active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-wrap{
+    margin: 0;
+    position: relative;
+    background-color: white;
+    /* max-width: 660px; */
+    border-radius: 4px;
+}
+
+.modal-close{
+    width: 25.5px;
+    height: 25.5px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: transparent;
+    background: center/contain no-repeat url("../img/close.svg");
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.modal-container{
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+.modal-title{
+    margin: 0;
+    font-family: 'ProximaNovaExtrabld';
+    font-size: 32px;
+}
+
+.modal-text{
+    margin: 0;
+    font-family: 'ProximaNovaRegular';
+    font-size: 24px;
+}
+
+.modal-img{
+    margin: 0;
+    width: 300px;
+}
